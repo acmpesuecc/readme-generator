@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #ffffff;
+}
+
+input {
+    padding: 1px 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+#checkbox-group{
+    display: grid;
+    padding: 60px;
+    grid-template-columns: repeat(3,90px);
+    grid-template-rows: repeat(2,150px);
+}
+
