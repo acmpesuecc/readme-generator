@@ -2,8 +2,10 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
 import "./index.css";
+import ContactList from "./components/ContactList";
 
 const Basic = () => (
+  <>
   <div>
     <h1 className="text-3xl font-bold underline">Testing Formik</h1>
     <Formik
@@ -126,7 +128,10 @@ const Basic = () => (
         </Form>
       )}
     </Formik>
+    <ContactList></ContactList>
   </div>
+  </>
+  
 );
 
 export default Basic;
