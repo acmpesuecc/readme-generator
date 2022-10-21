@@ -2,10 +2,14 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
 import "./index.css";
-import Contactlist from "./components/Contactlist";
+import Navbar from "./Components/Navbar";
+
 
 const Basic = () => (
-  <><div>
+  
+  <>
+  <Navbar/>
+  <div>
   <h1 className="text-3xl font-bold underline">Testing Formik</h1>
   <Formik
     initialValues={{ email: "", name: "" }}
@@ -19,6 +23,7 @@ const Basic = () => (
     {({ isSubmitting }) => (
       <Form>
         <div className="flex-auto">
+        
           <label className="font-bold">
             <Field
               className="shadow appearance-none border rounded text-gray"
@@ -29,6 +34,7 @@ const Basic = () => (
           
           </label>
           <br></br>
+          <br></br>
           <label className="font-bold">
             <Field
               className="shadow appearance-none border rounded text-gray"
@@ -37,6 +43,7 @@ const Basic = () => (
               placeholder="email"
             />
           </label>
+          <br></br>
           <br></br>
           <label className="font-bold">
             <Field
@@ -47,6 +54,7 @@ const Basic = () => (
             />
           </label>
         </div>
+        
         <br></br>
         <b className="underline text-xl">
           Programming languages you work with:
@@ -146,14 +154,44 @@ const Basic = () => (
          go
 
          </label>
+
+
           
+        </div>
+        <b className="underline text-xl">
+          Frontend Development
+        </b>
+        <br></br>
+        <div
+          id="checkbox-group"
+          role="group"
+          aria-labelledby="checkbox-group"
+        >
+        <label>
+        <img class="ml-4 w-8 h-8 sm:w-10 sm:h-10" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs"/>
+        <Field type="checkbox" name="checked" value="vuejs"/>
+        vuejs
+        </label>
+        <label>
+        <img class="ml-4 w-8 h-8 sm:w-10 sm:h-10" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react"/>
+        <Field type="checkbox" name="checked" value="react"/>
+        React
+        </label>
+        <label>
+        <img class="ml-4 w-8 h-8 sm:w-10 sm:h-10" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5"/>
+        <Field type="checkbox" name="checked" value="html5"/>
+        html5
+        </label>
         </div>
         <div className="flex justify-center">
           <button
             className="object- none object-left bg-blue-500 hover:bg-blue-700 text-white font-bold rounded py-5 px-5 inset-2.5"
             type="submit"
             disabled={isSubmitting}
+            backgroundColor="black"
+
           >
+          
           
             Submit
           </button>
@@ -161,10 +199,8 @@ const Basic = () => (
       </Form>
     )}
   </Formik>
-</div>
-
-
-<Contactlist/></>
+  
+</div></>
 );
   
 export default Basic;
