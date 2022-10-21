@@ -2,10 +2,10 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
 import "./index.css";
-import Contactlist from "./components/Contactlist";
+
 
 const Basic = () => (
-  <><div>
+<div>
   <h1 className="text-3xl font-bold underline">Testing Formik</h1>
   <Formik
     initialValues={{ email: "", name: "" }}
@@ -164,7 +164,7 @@ const Basic = () => (
 </div>
 
 
-<Contactlist/></>
+
 );
   
 export default Basic;
