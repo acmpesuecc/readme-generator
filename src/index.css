@@ -13,9 +13,9 @@ input {
 }
 
 #checkbox-group{
-    display: grid;
+    display:grid;
     padding: 60px;
-    grid-template-columns: repeat(3,90px);
-    grid-template-rows: repeat(2,150px);
+    grid-template-columns: repeat(3,120px);
+    grid-template-rows: repeat(3,170px);
 }
 

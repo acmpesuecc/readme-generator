@@ -113,6 +113,33 @@ const Basic = () => (
               <Field type="checkbox" name="checked" value="typescript" />
               Typescript
             </label>
+
+            <label>
+              <img
+                className="object-contain h-9 w-9"
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg"
+                alt="Rust"
+              ></img>
+              <Field type="checkbox" name="checked" value="C" />Rust
+            </label>
+
+            <label>
+              <img
+                className="object-contain h-9 w-9"
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                alt="Python"
+              ></img>
+              <Field type="checkbox" name="checked" value="C" />Python
+            </label>
+
+            <label>
+              <img
+                className="object-contain h-9 w-9"
+                src="https://upload.wikimedia.org/wikipedia/commons/3/39/Scala-full-color.svg"
+                alt="Scala"
+              ></img>
+              <Field type="checkbox" name="checked" value="C" />Scala
+            </label>
           </div>
           <div className="flex justify-center">
             <button
