@@ -3,6 +3,8 @@ import React from "react";
 import { Formik, Form, Field } from "formik";
 import "./index.css";
 import ContactList from "./components/ContactList";
+import Social from "./components/Social";
+
 
 const Basic = () => (
   <>
@@ -155,6 +157,7 @@ const Basic = () => (
             >
               Submit
             </button>
+           <Social></Social>
           </div>
         </Form>
       )}
