@@ -7,8 +7,7 @@ export default function Social() {
   return (
     <>
     <h4>You can reach us on the following</h4>
-    <p>Click the images to go the sites
-    </p>
+    <p>Click the images to go the site</p>
     <a href="https://www.instagram.com/"><img src={img1} alt="logo insta"></img></a> 
     <a href="https://www.facebook.com/"><img src={img2} alt="logo facebook"></img></a>
     <a href="https://www.linkedin.com/"> <img src={img3} alt="logo linkedin"></img></a>
