@@ -2,6 +2,7 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
 import "./index.css";
+import ContactUs from "./contactus";
 
 const Basic = () => (
   <div>
@@ -92,7 +93,8 @@ const Basic = () => (
               ></img>
               <Field type="checkbox" name="checked" value="node" />
               Node JS
-            </label>
+            </label>start
+
 
             <label>
               <img
@@ -122,7 +124,10 @@ const Basic = () => (
             >
               Submit
             </button>
+
           </div>
+
+          <ContactUs />
         </Form>
       )}
     </Formik>
