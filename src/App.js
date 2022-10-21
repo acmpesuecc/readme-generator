@@ -2,8 +2,10 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
 import "./index.css";
+import ContactList from "./components/ContactList";
 
 const Basic = () => (
+  <>
   <div>
     <h1 className="text-3xl font-bold underline">Testing Formik</h1>
     <Formik
@@ -103,6 +105,37 @@ const Basic = () => (
               <Field type="checkbox" name="checked" value="javascript" />
               Javascript
             </label>
+            <label>
+          <img class="ml-4 w-8 h-8 sm:w-10 sm:h-10" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" alt="ruby"/>
+          <Field type="checkbox" name="checked" value="Ruby" />
+          Ruby
+          </label>
+          <label>
+          <img class="ml-4 w-8 h-8 sm:w-10 sm:h-10" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php"/>
+          <Field type="checkbox" name="checked" value="php" />
+          php
+
+          </label>
+          <label>
+            <img
+              className="object-contain h-9 w-9"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+              alt="typescript"
+            ></img>
+            <Field type="checkbox" name="checked" value="typescript" />
+            Typescript
+          </label>
+         <label>
+         <img class="ml-4 w-8 h-8 sm:w-10 sm:h-10" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/coffeescript/coffeescript-original-wordmark.svg" alt="coffeescript"/>
+         <Field type="checkbox" name="checked" value="coffeescript"/>
+         coffeescript
+         </label>
+         <label>
+         <img class="ml-4 w-8 h-8 sm:w-10 sm:h-10" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go"/>
+         <Field type="checkbox" name="checked" value="go"/>
+         go
+
+         </label>
 
             <label>
               <img
@@ -126,7 +159,10 @@ const Basic = () => (
         </Form>
       )}
     </Formik>
+    <ContactList></ContactList>
   </div>
+  </>
+  
 );
 
 export default Basic;
